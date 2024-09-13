@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+header {
+  width: 100%;
+  background-color: rgb(33, 33, 33);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  gap: 0.5px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+h1 {
+  color: aliceblue;
+}
+nav a {
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+main {
+  background-color: goldenrod;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  padding: 1rem;
+}
+
+.item {
+  background-color: khaki;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+
+.item:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+footer {
+  background-color: darkorange;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.x {
+  background-color: rgb(33, 33, 33);
+  color: aliceblue;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  height: 100px;
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/grid.css" />
+    <title>Exercisgrid</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my Websit</h1>
+      <nav>
+        <a href="">Menu</a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Other</a>
+      </nav>
+    </header>
+    <main>
+      <div class="item">Main</div>
+      <div class="item">Asid</div>
+      <div class="item">Section</div>
+    </main>
+    <footer>
+      <aside>aside</aside>
+    </footer>
+    <footer class="x">
+      <aside>Footer</aside>
+    </footer>
+  </body>
+</html>
